@@ -15,6 +15,14 @@
 		627BA3AB22E883DB005DBE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627BA3A922E883DB005DBE17 /* LaunchScreen.storyboard */; };
 		627BA3B622E883DC005DBE17 /* SessionSharingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3B522E883DC005DBE17 /* SessionSharingTests.swift */; };
 		627BA3C122E883DC005DBE17 /* SessionSharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3C022E883DC005DBE17 /* SessionSharingUITests.swift */; };
+		627BA3D022E885BB005DBE17 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3CE22E885BB005DBE17 /* WebViewController.swift */; };
+		627BA3D122E885BB005DBE17 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3CF22E885BB005DBE17 /* MainViewController.swift */; };
+		627BA3D622E885EB005DBE17 /* RequestLoginToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3D322E885EB005DBE17 /* RequestLoginToken.swift */; };
+		627BA3D822E885EB005DBE17 /* TokenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3D522E885EB005DBE17 /* TokenItem.swift */; };
+		627BA3DA22E8860B005DBE17 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3D922E8860B005DBE17 /* MainViewModel.swift */; };
+		627BA3DC22E88613005DBE17 /* SocketIOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3DB22E88613005DBE17 /* SocketIOManager.swift */; };
+		627BA3DE22E8861C005DBE17 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3DD22E8861C005DBE17 /* Utilities.swift */; };
+		627BA3E122E88BD9005DBE17 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 627BA3E022E88BD9005DBE17 /* WebKit.framework */; };
 		7C4CFEE3A109FFA98AADDE88 /* Pods_SessionSharingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 861F29BC5223E757F4BBB27D /* Pods_SessionSharingUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +58,14 @@
 		627BA3BC22E883DC005DBE17 /* SessionSharingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SessionSharingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		627BA3C022E883DC005DBE17 /* SessionSharingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionSharingUITests.swift; sourceTree = "<group>"; };
 		627BA3C222E883DC005DBE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		627BA3CE22E885BB005DBE17 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		627BA3CF22E885BB005DBE17 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		627BA3D322E885EB005DBE17 /* RequestLoginToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLoginToken.swift; sourceTree = "<group>"; };
+		627BA3D522E885EB005DBE17 /* TokenItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenItem.swift; sourceTree = "<group>"; };
+		627BA3D922E8860B005DBE17 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		627BA3DB22E88613005DBE17 /* SocketIOManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketIOManager.swift; sourceTree = "<group>"; };
+		627BA3DD22E8861C005DBE17 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		627BA3E022E88BD9005DBE17 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		861F29BC5223E757F4BBB27D /* Pods_SessionSharingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionSharingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C29B3FBEAA0150F6BBF6F8 /* Pods-SessionSharingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionSharingTests.release.xcconfig"; path = "Target Support Files/Pods-SessionSharingTests/Pods-SessionSharingTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC7E8CA0516393DA00245B5E /* Pods_SessionSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SessionSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627BA3E122E88BD9005DBE17 /* WebKit.framework in Frameworks */,
 				5017336394DAF66C65C3BF2C /* Pods_SessionSharing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,7 +129,12 @@
 		627BA39F22E883DB005DBE17 /* SessionSharing */ = {
 			isa = PBXGroup;
 			children = (
+				627BA3DF22E8861F005DBE17 /* Utilities */,
+				627BA3D222E885D8005DBE17 /* Models */,
 				627BA3A022E883DB005DBE17 /* AppDelegate.swift */,
+				627BA3CF22E885BB005DBE17 /* MainViewController.swift */,
+				627BA3CE22E885BB005DBE17 /* WebViewController.swift */,
+				627BA3D922E8860B005DBE17 /* MainViewModel.swift */,
 				627BA3A422E883DB005DBE17 /* Main.storyboard */,
 				627BA3A722E883DB005DBE17 /* Assets.xcassets */,
 				627BA3A922E883DB005DBE17 /* LaunchScreen.storyboard */,
@@ -139,9 +161,28 @@
 			path = SessionSharingUITests;
 			sourceTree = "<group>";
 		};
+		627BA3D222E885D8005DBE17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				627BA3D322E885EB005DBE17 /* RequestLoginToken.swift */,
+				627BA3D522E885EB005DBE17 /* TokenItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		627BA3DF22E8861F005DBE17 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				627BA3DB22E88613005DBE17 /* SocketIOManager.swift */,
+				627BA3DD22E8861C005DBE17 /* Utilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		AD6A722B2381C1FA440EAAC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				627BA3E022E88BD9005DBE17 /* WebKit.framework */,
 				CC7E8CA0516393DA00245B5E /* Pods_SessionSharing.framework */,
 				DA195440A3F7194F731CEACA /* Pods_SessionSharingTests.framework */,
 				861F29BC5223E757F4BBB27D /* Pods_SessionSharingUITests.framework */,
@@ -383,7 +424,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				627BA3D122E885BB005DBE17 /* MainViewController.swift in Sources */,
+				627BA3D622E885EB005DBE17 /* RequestLoginToken.swift in Sources */,
 				627BA3A122E883DB005DBE17 /* AppDelegate.swift in Sources */,
+				627BA3DC22E88613005DBE17 /* SocketIOManager.swift in Sources */,
+				627BA3D022E885BB005DBE17 /* WebViewController.swift in Sources */,
+				627BA3D822E885EB005DBE17 /* TokenItem.swift in Sources */,
+				627BA3DE22E8861C005DBE17 /* Utilities.swift in Sources */,
+				627BA3DA22E8860B005DBE17 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +607,8 @@
 			baseConfigurationReference = D307D5D2FAE88D0C3CBD7B0B /* Pods-SessionSharing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = A95946AJZZ;
 				INFOPLIST_FILE = SessionSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,6 +616,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = info.app.SessionSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = CommonDevelopment;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -577,7 +627,8 @@
 			baseConfigurationReference = DDAA05A5A2C872EB62B0501D /* Pods-SessionSharing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SessionSharing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -585,6 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = info.app.SessionSharing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
