@@ -13,12 +13,14 @@ class WebViewController: UIViewController {
 
     @IBOutlet weak var webView: WKWebView!
     
-    var loginData : [String:Any]?
-    
+    var viewModel: WebViewModel!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        viewModel.processWebCookies() { (request) in
+            self.webView.load(request)            
+        }
     }
 
     /*

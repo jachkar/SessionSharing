@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        passwordTxt.text = "mykimykmykitoken"
+//        passwordTxt.text = "mykimykmykitoken"
         
         setupView()
         handleWebSocket()
@@ -73,12 +73,10 @@ class MainViewController: UIViewController {
         
         viewModel.didFinishLogin = {
             //Handle Login Data
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-                let webVC = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-                webVC.loginData = self.viewModel.loginData
-                self.present(webVC, animated: true, completion: nil)
-            }
+            let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+            let webVC = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            webVC.viewModel = WebViewModel(webViewData: self.viewModel.loginData)
+            self.present(webVC, animated: true, completion: nil)
         }
     }
     
