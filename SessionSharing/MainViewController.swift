@@ -53,10 +53,6 @@ class MainViewController: UIViewController {
     
     func handleWebSocket() {
         
-        viewModel.updateLoadingStatus = {
-            let _ = self.viewModel.isLoading ? SVProgressHUD.show() : SVProgressHUD.dismiss()
-        }
-        
         viewModel.showAlert = {
             if let error = self.viewModel.error {
                 SVProgressHUD.showError(withStatus: error)
@@ -82,6 +78,10 @@ class MainViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: Any) {
         viewModel.emitLogin(password: passwordTxt.text!)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 }
 

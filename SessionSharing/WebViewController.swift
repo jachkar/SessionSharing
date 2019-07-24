@@ -22,6 +22,10 @@ class WebViewController: UIViewController {
             self.webView.load(request)            
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
+    }
 
     /*
     // MARK: - Navigation

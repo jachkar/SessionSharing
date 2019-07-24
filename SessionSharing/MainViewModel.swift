@@ -33,10 +33,6 @@ class MainViewModel {
         SocketIOManager.sharedInstance.emitRequestSession(token: password)
     }
     
-    var isLoading: Bool = false {
-        didSet { self.updateLoadingStatus?() }
-    }
-    
     var error: String? {
         didSet { self.showAlert?() }
     }
@@ -50,7 +46,6 @@ class MainViewModel {
     }
     
     var socketDidConnect: (() -> ())?
-    var updateLoadingStatus: (() -> ())?
     var showAlert: (() -> ())?
     var didFinishLogin: (() -> ())?
 }

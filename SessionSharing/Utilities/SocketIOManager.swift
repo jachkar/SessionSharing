@@ -26,9 +26,10 @@ class SocketIOManager: NSObject {
     
     //Connection
     func socketConnectedHandler(completionHandler: @escaping () -> Void) {
-        socket.on(clientEvent: .connect) { (data, ack) in
-            if self.sid?.isStringNull() == false {
-                self.socket.emit("requestLogin")
+        socket.on(clientEvent: .connect) { [weak self] (data, ack) in
+            if self!.sid?.isStringNull() == false {
+                self!.socket.emit("requestLogin")
+                self!.sid = nil
             } else {
                 completionHandler()
             }
