@@ -1,0 +1,6 @@
+framework module Pods_SessionSharingTests {
+  umbrella header "Pods-SessionSharingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
