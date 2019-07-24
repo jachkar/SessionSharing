@@ -3,14 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5017336394DAF66C65C3BF2C /* Pods_SessionSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC7E8CA0516393DA00245B5E /* Pods_SessionSharing.framework */; };
 		50FF767077B965CE609BEF33 /* Pods_SessionSharingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA195440A3F7194F731CEACA /* Pods_SessionSharingTests.framework */; };
 		627BA3A122E883DB005DBE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3A022E883DB005DBE17 /* AppDelegate.swift */; };
-		627BA3A322E883DB005DBE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627BA3A222E883DB005DBE17 /* ViewController.swift */; };
 		627BA3A622E883DB005DBE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627BA3A422E883DB005DBE17 /* Main.storyboard */; };
 		627BA3A822E883DB005DBE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 627BA3A722E883DB005DBE17 /* Assets.xcassets */; };
 		627BA3AB22E883DB005DBE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 627BA3A922E883DB005DBE17 /* LaunchScreen.storyboard */; };
@@ -41,7 +40,6 @@
 		0BE9F8935473A2AF6AAE8EC9 /* Pods-SessionSharingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SessionSharingTests.debug.xcconfig"; path = "Target Support Files/Pods-SessionSharingTests/Pods-SessionSharingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		627BA39D22E883DB005DBE17 /* SessionSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SessionSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		627BA3A022E883DB005DBE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		627BA3A222E883DB005DBE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		627BA3A522E883DB005DBE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		627BA3A722E883DB005DBE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		627BA3AA22E883DB005DBE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				627BA3A022E883DB005DBE17 /* AppDelegate.swift */,
-				627BA3A222E883DB005DBE17 /* ViewController.swift */,
 				627BA3A422E883DB005DBE17 /* Main.storyboard */,
 				627BA3A722E883DB005DBE17 /* Assets.xcassets */,
 				627BA3A922E883DB005DBE17 /* LaunchScreen.storyboard */,
@@ -162,7 +159,6 @@
 				0413574E62A37B233589E54B /* Pods-SessionSharingUITests.debug.xcconfig */,
 				F8F349043B96A2CB44E2845A /* Pods-SessionSharingUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -387,7 +383,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				627BA3A322E883DB005DBE17 /* ViewController.swift in Sources */,
 				627BA3A122E883DB005DBE17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
